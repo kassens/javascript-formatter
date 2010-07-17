@@ -8,3 +8,8 @@ Currently, it's tested with [Node][].
 [PEG]:http://en.wikipedia.org/wiki/Parsing_expression_grammar "parsing expression grammar"
 [Node]:http://nodejs.org/
 [PEG.js]:http://github.com/dmajda/pegjs
+
+Getting Started
+===============
+
+	node test.js

@@ -185,6 +185,10 @@ format.WhileStatement = function(node, indent){
 	return 'while (' + format(node.condition) + ') ' + format(node.statement, indent);
 };
 
+format.DoWhileStatement = function(node, indent){
+	return 'do ' + format(node.statement, indent) + ' while (' + format(node.condition) + ');';
+};
+
 format.SwitchStatement = function(node, indent){
 	return 'switch (' + format(node.expression, indent) + '){\n' + node.clauses.map(function(clause){
 		return indent + INDENT + format(clause, indent + INDENT);
